@@ -9,6 +9,9 @@ Monitor de logs y alertas en sistemas Linux. Es una herramienta sencilla y útil
   - [Funcionalidades](#funcionalidades)
   - [Tecnologías utilizadas](#tecnologías-utilizadas)
   - [Instalación](#instalación)
+  - [Uso](#uso)
+  - [Estructura del proyecto](#estructura-del-proyecto)
+  - [Roadmap](#roadmap)
 
 ## Acerca del proyecto  
 Aquí detalla:  
@@ -32,16 +35,37 @@ Lista de lo que hace el proyecto (bullets). Ejemplo:
 
 ## Tecnologías utilizadas  
 - Python 3.13
-- Librerías: `socket`, `asyncio`, `pandas`, `Flask`, `FastAPI`, etc.  
-- Base de datos: SQLite / PostgreSQL (si aplica)  
-- Entorno: Linux / Docker (si aplica)  
-- Otras: systemd service, cron job, etc.
+
 
 ## Instalación  
-Instrucciones para instalar/configurar el proyecto localmente. Por ejemplo:  
-```bash
-git clone https://github.com/tu_usuario/tu_proyecto.git  
-cd tu_proyecto  
-python3 -m venv venv  
-source venv/bin/activate  
-pip install -r requirements.txt  
+
+
+## Uso
+
+## Estructura del proyecto
+monitor_logs_project/
+│– monitor_logs.py            # script principal (CLI)
+│– config.yml                 # archivo de configuración
+│– modules/
+│    ├─ file_watcher.py       # módulo de “seguimiento de fichero”
+│    ├─ parser.py             # módulo de parseo de registros del log y detección de patrones
+│    ├─ alert_manager.py      # módulo que implementa distintas alertas (correo, Telegram, Slack)
+│    ├─ storage.py            # módulo para registro de eventos detectados (podría ser SQLite o fichero)
+│– tests/
+│    ├─ test_parser.py
+│    ├─ test_alert_manager.py
+│– requirements.txt
+│– README.md
+│– LICENSE
+
+
+## Roadmap
+| Fase | Duración estimada | Hitos |
+|------|-------------------|-------|
+| 1 - Diseño y preparación                          | ~1-2 días | Definir patrones a detectar, seleccionar ficheros de log, configuración base, entorno virtual e inicializar repo Git.                 |
+| 2 - Implementación básica de seguimiento y parser | ~3-4 días | Implementar file_watcher.py (leer fichero en tiempo real) y parser.py (regex simples y capturar eventos) y probar con un fichero log. |
+| 3 - Alertas simples                               | ~2-3 días | Implementar alert_manager.py (alertas por email), módulo de config de alerta, pruebas flujo detección + alerta.                       |
+| 4 - Persistencia de eventos y testing             | ~2-3 días | Implementar storeage.py (SQLite), guardar eventos sencillo, tests unitarios parser y alert_manager y, mejorar logging del sistema.    |
+| 5 - Umbrales / agrupar alertas                    | ~2 días   | Lógica de umbral tipo de evento, alerta grave (cuando se supere umbral), hacerlo configurable en yaml.                                |
+| 6 - Empaquetado + documentación                   | ~1-2 días | README preeliminar, documentar código, requirements.txt, diseñar empaquetado CLI o con setup.py (Docker??).                           |
+| 7(bonus) - Dashboard web                          | ~3-4 días | Aplicación web pequeña (Flask o FastAPI): últimos eventos, gráficos sencillos KPIs y lista completa eventos. Documentar cosas nuevas. |
