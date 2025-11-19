@@ -1,0 +1,34 @@
+log_files:
+  - path: /var/log/auth.log
+    patterns:
+      - name: login_failed
+        regex: "Failed password for .* from (?P<ip>\\d+\\.\\d+\\.\\d+\\.\\d+)"
+      - name: sudo_session_opened
+        regex: "session opened for user .* by .*"
+alerting:
+  channels:
+    email:
+      enabled: true
+      smtp_server: smtp.example.com
+      smtp_port: 587
+      user: alerta@example.com
+      password: 13456
+      recipients:
+        - admin1@example.com
+        - admin2@example.com
+    telegram:
+      enabled: false
+      bot_token: "XXXX"
+      chat_id: 123456789
+thresholds:
+  login_failed:
+    count: 5
+    window_minutes: 10
+  sudo_session_opened:
+    count: 1
+    window_minutes: 1
+storage:
+  sqlite_file: events.db
+logging:
+  level: INFO
+  file: monitor_logs_runtime.log
