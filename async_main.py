@@ -1,6 +1,8 @@
 import asyncio
 from modules.file_watcher import follow_file
 from modules.parser import parse_log
+# from modules.config import load_config
+import yaml
 
 # async def test_async():
 #     print('Hola asincrono...')
@@ -16,6 +18,13 @@ from modules.parser import parse_log
 #     tasks = [follow_file(await open_file("./tests/test_syslog.txt"))]
 #     await asyncio.gather(*tasks)
 
+# TODO: Mover a modulo config.py (no localiza el fichero YAML desde el directorio modulos)
+def load_config(path='config.yml'):
+    with open(path, "r") as f:
+        return yaml.safe_load(f)
+    
+config = load_config()
+print(config['log_files'])
 # TODO: Implementar main() como arriba, con lista de corrutinas
 async def main():
     print('Ejecutando main...')
