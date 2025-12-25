@@ -1,0 +1,50 @@
+2025-12-05T21:00:40.967093+00:00 ubuntu systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+2025-12-05T21:00:40.967998+00:00 ubuntu systemd[1]: systemd-localed.service: Deactivated successfully.
+2025-12-05T21:00:40.969413+00:00 ubuntu dbus-daemon[2471]: [session uid=1000 pid=2471] Successfully activated service 'org.gnome.Terminal'
+2025-12-05T21:00:40.969587+00:00 ubuntu systemd[2442]: Started gnome-terminal-server.service - GNOME Terminal Server.
+2025-12-05T21:00:41.012746+00:00 ubuntu gnome-shell[2632]: meta_window_set_stack_position_no_sync: assertion 'window->stack_position >= 0' failed
+2025-12-05T21:00:41.016801+00:00 ubuntu systemd[2442]: Started vte-spawn-23294de5-cfd8-4980-ae51-dca4813c297b.scope - VTE child process 3378 launched by gnome-terminal-server process 3364.
+2025-12-05T21:01:10.413089+00:00 ubuntu gnome-shell[2632]: Window manager warning: Ping serial 260200 was reused for window W1, previous use was for window W0.
+2025-12-05T21:01:10.413256+00:00 ubuntu gnome-shell[2632]: Window manager warning: Ping serial 260200 was reused for window W1, previous use was for window W0.
+2025-12-05T21:01:11.117681+00:00 ubuntu gnome-shell[2632]: Window manager warning: Ping serial 260905 was reused for window W0, previous use was for window W1.
+2025-12-05T21:01:11.117762+00:00 ubuntu gnome-shell[2632]: Window manager warning: Ping serial 260905 was reused for window W0, previous use was for window W1.
+2025-12-05T21:01:11.213973+00:00 ubuntu systemd[2442]: Started app-gnome-ubuntu\x2dadvantage\x2dnotification-3402.scope - Application launched by gnome-session-binary.
+2025-12-05T21:01:11.214691+00:00 ubuntu systemd[2442]: Started app-gnome-update\x2dnotifier-3406.scope - Application launched by gnome-session-binary.
+2025-12-05T21:01:11.236167+00:00 ubuntu geoclue[3090]: Service not used for 60 seconds. Shutting down..
+2025-12-05T21:01:11.239674+00:00 ubuntu systemd[1]: geoclue.service: Deactivated successfully.
+2025-12-05T21:01:13.242083+00:00 ubuntu update-notifier.desktop[3491]: #015Reading package lists... 0%#015#015Reading package lists... 100%#015#015Reading package lists... Done
+2025-12-05T21:01:13.346784+00:00 ubuntu update-notifier.desktop[3491]: #015Building dependency tree... 0%#015#015Building dependency tree... 0%#015#015Building dependency tree... 50%#015#015Building dependency tree... 50%#015#015Building dependency tree... Done
+2025-12-05T21:01:13.347414+00:00 ubuntu update-notifier.desktop[3491]: #015Reading state information... 0% #015#015Reading state information... 0%#015#015Reading state information... Done
+2025-12-05T21:01:14.491323+00:00 ubuntu update-notifier.desktop[3500]: WARNING:root:can not import unity GI Namespace Dbusmenu not available
+2025-12-05T21:01:32.156511+00:00 ubuntu update-notifier.desktop[3430]: WARNING:root:timeout reached, exiting
+2025-12-05T21:01:37.196324+00:00 ubuntu update-notifier.desktop[3500]: WARNING:root:Error loading .desktop file /usr/share/ubuntu/applications/texdoctk.desktop: constructor returned NULL
+2025-12-05T21:01:53.743266+00:00 ubuntu anacron[1300]: Job `cron.daily' started
+2025-12-05T21:01:53.748855+00:00 ubuntu anacron[3777]: Updated timestamp for job `cron.daily' to 2025-12-05
+2025-12-05T21:01:53.755267+00:00 ubuntu anacron[1300]: Job `cron.daily' terminated
+2025-12-05T21:01:53.756004+00:00 ubuntu systemd[1]: Starting update-notifier-download.service - Download data for packages that failed at package install time...
+2025-12-05T21:01:53.807667+00:00 ubuntu systemd[1]: update-notifier-download.service: Deactivated successfully.
+2025-12-05T21:01:53.807776+00:00 ubuntu systemd[1]: Finished update-notifier-download.service - Download data for packages that failed at package install time.
+2025-12-05T21:02:11.190953+00:00 ubuntu systemd[2442]: Started app-gnome-org.gnome.DejaDup.Monitor-3788.scope - Application launched by gnome-session-binary.
+2025-12-05T21:02:19.252841+00:00 ubuntu systemd[2442]: Started vte-spawn-1bfb60c0-a00f-408f-8648-2d45a511cbcb.scope - VTE child process 3801 launched by gnome-terminal-server process 3364.
+2025-12-05T21:02:29.497000+00:00 ubuntu dbus-daemon[2471]: [session uid=1000 pid=2471] Activating service name='org.gnome.Nautilus' requested by ':1.31' (uid=1000 pid=2632 comm="/usr/bin/gnome-shell" label="unconfined")
+2025-12-05T21:02:29.525898+00:00 ubuntu nautilus[3812]: Connecting to org.freedesktop.Tracker3.Miner.Files
+2025-12-05T21:02:29.526638+00:00 ubuntu dbus-daemon[2471]: [session uid=1000 pid=2471] Successfully activated service 'org.gnome.Nautilus'
+2025-12-05T21:02:29.700774+00:00 ubuntu dbus-daemon[1302]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.114' (uid=1000 pid=3812 comm="/usr/bin/nautilus --gapplication-service" label="nautilus (unconfined)")
+2025-12-05T21:02:29.701977+00:00 ubuntu gnome-shell[2632]: meta_window_set_stack_position_no_sync: assertion 'window->stack_position >= 0' failed
+2025-12-05T21:02:29.711285+00:00 ubuntu systemd[1]: Starting systemd-hostnamed.service - Hostname Service...
+2025-12-05T21:02:29.730906+00:00 ubuntu dbus-daemon[1302]: [system] Successfully activated service 'org.freedesktop.hostname1'
+2025-12-05T21:02:29.731015+00:00 ubuntu systemd[1]: Started systemd-hostnamed.service - Hostname Service.
+2025-12-05T21:02:29.783236+00:00 ubuntu gvfsd-recent[3846]: Unable to load /home/elmonje/.local/share/recently-used.xbel: Failed to open file “/home/elmonje/.local/share/recently-used.xbel”: No such file or directory
+2025-12-05T21:02:29.784347+00:00 ubuntu gnome-shell[2632]: Invalid sequence for VSYNC frame info
+2025-12-05T21:02:40.049833+00:00 ubuntu systemd[2442]: Started vte-spawn-604df80f-dfe7-4bb5-9bc0-89d35225dc28.scope - VTE child process 3857 launched by gnome-terminal-server process 3364.
+2025-12-05T21:02:59.818600+00:00 ubuntu systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+2025-12-05T21:04:11.219756+00:00 ubuntu dbus-daemon[2471]: [session uid=1000 pid=2471] Activating service name='org.gnome.DejaDup' requested by ':1.112' (uid=1000 pid=3788 comm="/usr/libexec/deja-dup/deja-dup-monitor" label="unconfined")
+2025-12-05T21:04:11.249401+00:00 ubuntu dbus-daemon[2471]: [session uid=1000 pid=2471] Successfully activated service 'org.gnome.DejaDup'
+2025-12-05T21:05:01.685034+00:00 ubuntu CRON[3888]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-12-05T21:05:10.809474+00:00 ubuntu systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+2025-12-05T21:05:10.836393+00:00 ubuntu systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+2025-12-05T21:05:12.843477+00:00 ubuntu systemd[1]: Started session-5.scope - Session 5 of User elmonje.
+2025-12-05T21:05:13.653286+00:00 ubuntu systemd[2442]: launchpadlib-cache-clean.service - Clean up old files in the Launchpadlib cache was skipped because of an unmet condition check (ConditionPathExists=/home/elmonje/.launchpadlib/api.launchpad.net/cache).
+2025-12-05T21:05:13.662948+00:00 ubuntu systemd[2442]: Starting update-notifier-release.service - Notification regarding a new release of Ubuntu...
+2025-12-05T21:05:15.216547+00:00 ubuntu PackageKit: daemon quit
+2025-12-05T21:05:15.225183+00:00 ubuntu systemd[1]: packagekit.service: Deactivated successfully.

@@ -1,3 +1,9 @@
 Linea de prueba fichero test_log.txtPrueba 2 del fichero log
 
 Prueba 2 del fichero log
+Prueba 2 del fichero log
+Prueba 2 del fichero log
+
+Prueba 2 del fichero log
+Prueba 2 del fichero log
+Prueba 2 del fichero log
